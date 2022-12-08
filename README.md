@@ -13,9 +13,9 @@ This study used 21 Java projects from the large-scale high-quality data set rece
 
 Result
 =============
-![image](https://github.com/starrydays/Multi-objective-Just-in-time-Software-Defect-Prediction/blob/main/IMG/rq1.png)
-![image](https://github.com/starrydays/Multi-objective-Just-in-time-Software-Defect-Prediction/blob/main/IMG/rq24.png)
-![image](https://github.com/starrydays/Multi-objective-Just-in-time-Software-Defect-Prediction/blob/main/IMG/rq3.png)
+![image](IMG/rq1.png)
+![image](IMG/rq24.png)
+![image](IMG/rq3.png)
 
 
 Operation Guide
