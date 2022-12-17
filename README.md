@@ -9,7 +9,7 @@ Boosting Multi-objective Just-in-time Software Defect Prediction by Fusing Exper
 Dataset
 ========
 This study used 21 Java projects from the large-scale high-quality data set recently collected by Ni et al. to mitigate the impact of tangled commits on the basis of LLTC4J.The details of statistical information  can be found in Table as bellow.
-![image](https://user-images.githubusercontent.com/28954173/208235279-9b038a93-c8d3-4be7-bcb8-1921a1491eff.png)
+![image](IMG/2.png)
 
 Result
 =============
