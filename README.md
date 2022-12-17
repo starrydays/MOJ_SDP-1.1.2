@@ -13,9 +13,15 @@ This study used 21 Java projects from the large-scale high-quality data set rece
 
 Result
 =============
-![image](IMG/rq1.png)
-![image](IMG/rq24.png)
-![image](IMG/rq3.png)
+
+![rq1](https://user-images.githubusercontent.com/28954173/208233989-e3fdf38c-862e-4e97-8f24-4416dbc343b5.png)
+
+
+![rq24](https://user-images.githubusercontent.com/28954173/208234069-4849ce0c-af1e-428e-99be-eb4c7174cb36.png)
+
+
+![rq3](https://user-images.githubusercontent.com/28954173/208234071-edf08ce7-375b-43fd-a17e-d73f0e9ad144.png)
+
 
 
 Operation Guide
