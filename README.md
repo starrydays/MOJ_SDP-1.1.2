@@ -24,9 +24,11 @@ Result
 
 CodeBERT Parameter Setting
 ===================
-Learning rate=5e-5
+Learning rate=1e-5
 
-batch size=128
+batch size=24
+
+maxmium epoch=50
 
 Operation Guide
 ===================
