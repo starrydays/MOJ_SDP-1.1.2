@@ -24,7 +24,8 @@ Result
 
 CodeBERT Parameter Setting
 ===================
-学习率5e-5，batch size=128，Adam optimizer
+Learning rate=5e-5
+batch size=128
 
 Operation Guide
 ===================
