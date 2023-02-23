@@ -22,7 +22,9 @@ Result
 
 ![image](https://user-images.githubusercontent.com/28954173/208235346-13bb4e99-0b8d-4b89-b92d-7f3229cf4584.png)
 
-
+CodeBERT Parameter Setting
+===================
+学习率5e-5，batch size=128，Adam optimizer
 
 Operation Guide
 ===================
