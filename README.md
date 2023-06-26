@@ -11,6 +11,75 @@ Dataset
 This study used 21 Java projects from the large-scale high-quality data set recently collected by Ni et al. to mitigate the impact of tangled commits on the basis of LLTC4J.The details of statistical information  can be found in Table as bellow.
 ![image](https://user-images.githubusercontent.com/28954173/208236564-e8f2a321-0cdc-4672-baaa-f518ca1c603a.png)
 
+Baseline
+=============
+
+We have provided some baseline running scripts here. Please use the following command to obtain the results of these baselines:
+
+- **LApredict**
+
+  ```python
+   python -m baselines.LApredict.lapredict
+  ```
+
+- **Yan et al**
+
+  First, run code in `n_gram.java` and then run the following command:
+
+  ```python
+   python -m baselines.ngram.evaluate_result
+  ```
+
+- **Deeper**
+
+  ```python
+   python -m baselines.Deeper.deeper
+  ```
+
+- **DeepJIT**
+
+  ```python
+    python -m baselines.DeepJIT.deepjit
+  ```
+
+- **CC2Vec**
+
+  ```python
+    python -m baselines.CC2Vec.cc2vec
+  ```
+
+- **JITLine**
+
+  ```python
+    python -m baselines.JITLine.jitline -style concat
+  ```
+
+- **JIT-Fine**
+
+  ```python
+    python -m JITFine.concat.run \
+      --output_dir=model/jitfine/saved_models_concat/checkpoints \
+      --config_name=microsoft/codebert-base \
+      --model_name_or_path=microsoft/codebert-base \
+      --tokenizer_name=microsoft/codebert-base \
+      --do_test \
+      --train_data_file data/jitfine/changes_train.pkl data/jitfine/features_train.pkl \
+      --eval_data_file data/jitfine/changes_valid.pkl data/jitfine/features_valid.pkl\
+      --test_data_file data/jitfine/changes_test.pkl data/jitfine/features_test.pkl\
+      --epoch 50 \
+      --max_seq_length 512 \
+      --max_msg_length 64 \
+      --train_batch_size 256 \
+      --eval_batch_size 25 \
+      --learning_rate 2e-5 \
+      --max_grad_norm 1.0 \
+      --evaluate_during_training \
+      --only_adds \
+      --buggy_line_filepath=data/jitfine/changes_complete_buggy_line_level.pkl \
+      --seed 42 2>&1 | tee model/jitfine/saved_models_concat/test.log
+  ```
+
+  
 Result
 =============
 
