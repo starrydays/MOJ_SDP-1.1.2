@@ -44,7 +44,7 @@ PopulationSize=200;
 if (strcmpi(prediction_type,'nclasses'))
     if (strcmpi(model,'logistic'))
         %apply logistic regression model
-        nvar=11;
+        nvar=14;
         options= gaoptimset(options,'PopulationSize',PopulationSize,'PopInitRange',[-10;10],'Generations',600,'UseParallel','always','Vectorized','on','CrossoverFcn',{@crossoverarithmetic},'CrossoverFraction',0.5,'TolFun',10^(-10),'MigrationDirection','both','InitialPopulation',[],'MutationFcn',{@mutationuniform,1/nvar},'DistanceMeasureFcn',{@distancecrowding, 'phenotype'},'ParetoFraction',0.5,'Display','off','PlotFcns',{@gaplotpareto});
         [X,FVAL,~,OUTPUT,POPULATION,SCORE] = gamultiobj(@fitnessLogistic_nclasses,nvar,[],[],[],[],-100*ones(1,nvar),100*ones(1,nvar),options);
     elseif (strcmpi(model,'dtree'))
@@ -64,7 +64,7 @@ if (strcmpi(prediction_type,'nclasses'))
 elseif (strcmpi(prediction_type,'ndefects'))
     if (strcmpi(model,'logistic'))
         %apply logistic regression model
-        nvar=11;
+        nvar=14;
         options= gaoptimset(options,'PopulationSize',PopulationSize,'PopInitRange',[-10;10],'Generations',400,'UseParallel','always','Vectorized','on','CrossoverFcn',{@crossoverarithmetic},'CrossoverFraction',0.5,'TolFun',10^(-10),'MigrationDirection','both','InitialPopulation',[],'MutationFcn',{@mutationuniform,1/nvar},'DistanceMeasureFcn',{@distancecrowding, 'phenotype'},'ParetoFraction',0.5,'Display','off','PlotFcns',{@gaplotpareto});
         [X,FVAL,~,OUTPUT,POPULATION,SCORE] = gamultiobj(@fitnessLogistic_ndefects,nvar,[],[],[],[],-100*ones(1,nvar),100*ones(1,nvar),options);
     elseif (strcmpi(model,'dtree'))
