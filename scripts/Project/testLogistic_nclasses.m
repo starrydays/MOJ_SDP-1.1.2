@@ -36,6 +36,7 @@ for i = 1:1:size(x,1)-1
     WP_POPT_ACC(i,4) = decAuc(WPdata);
     WP_POPT_ACC(i,5) = decR20E(WPdata);
     WP_POPT_ACC(i,6) = decE20R(WPdata);
+    WP_POPT_ACC(i,7:8) = decpr_re(WPdata);
     y(i,1)=(pred>0.5)'*cost;
     y(i,2)=-(pred>0.5)'*real(nbug>0);
 end
