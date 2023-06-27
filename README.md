@@ -104,9 +104,11 @@ Operation Guide
 Train the MOJ-SDP model based on expert metrics：<br>
 _________
     Use only the first 14 columns in the dataset.Change the size of matrix A in ..\MODEP\fitnessLogistic_nclasses.m and ..\Project\muti_testLogistic_nclasses.m,and change the variable 'nvar' in ..\MODEP\MODEP.m to 14.
+
 Train the MOJ-SDP model based on semantic metrics：<br>
 __________
     Use only the last 768 columns in the dataset.Change the size of matrix A in ..\MODEP\fitnessLogistic_nclasses.m and ..\Project\muti_testLogistic_nclasses.m,and change the variable 'nvar' in ..\MODEP\MODEP.m to 768.
+
 Train the MOJ-SDP model based on fusion metrics：<br>
 __________
     Use only the last 782 columns in the dataset.Change the size of matrix A in ..\MODEP\fitnessLogistic_nclasses.m and ..\Project\muti_testLogistic_nclasses.m,and change the variable 'nvar' in ..\MODEP\MODEP.m to 782.
@@ -114,6 +116,7 @@ __________
 Model complementary analysis, run<br>
 ____________
     venn\demo1.m
+
 Model performance evaluation, run<br>
 ____________
     Bar_chart.m
