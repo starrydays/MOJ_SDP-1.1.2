@@ -8,8 +8,6 @@ A= confusionmat(data(:,1),data(:,3));
    recall = mean(recall);
    F1 = 2*precision*recall/(precision + recall);
 
-%precision = A(1,1) / (A(1,1) + A(2,1));
-%recall = A(1,1) / (A(1,1) + A(1,2));
-%F1 = 2 * precision * recall/(precision + recall);
+
 y=F1;
 end
